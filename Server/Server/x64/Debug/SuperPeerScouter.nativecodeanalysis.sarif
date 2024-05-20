@@ -1,0 +1,123 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.37.32824.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/superpeerscouter.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "eb29bb81e1cc81b240c0d759b62320f3b19767261bb7cbc5adf44a048498546e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/superpeerscouter.h"
+          },
+          "hashes": {
+            "sha-256": "bb9bc89165e5efaaf03090af49ef7ff78328df735f1dba22ea89ae2d603d255f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/packetmanager.h"
+          },
+          "hashes": {
+            "sha-256": "9a011e81ece7d15b664a38b4f78b5e742329ec7a2134989060b3035794334d1c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/stdfax.h"
+          },
+          "hashes": {
+            "sha-256": "e29d9d212c80ff4a525cd9e19154f4fc30857ade53087ca72686755786c9807c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/server.h"
+          },
+          "hashes": {
+            "sha-256": "9563a7049761afe5b3a237e5782ca098163f72f6552fd408d4adf29ab09bb7a7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/system.h"
+          },
+          "hashes": {
+            "sha-256": "096854e97776c91a62324c615dbfd548b8ae90da00b6137fab47a1f35d83c17c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/roommanager.h"
+          },
+          "hashes": {
+            "sha-256": "c7f2526e66a73de02eba22a9f3a0001d7b47666d4fd6c03967ffbc2420c853c7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/room.h"
+          },
+          "hashes": {
+            "sha-256": "9de0db25ec6be6626be7b9d267163009c36d51d5c58f4d4b6854f6404611246e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/client.h"
+          },
+          "hashes": {
+            "sha-256": "d8bb84d20619cdaed3c3a65ba8bc789ac4dff29e8cf7f5d48ad2315f9dbed5c0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/superpeer.h"
+          },
+          "hashes": {
+            "sha-256": "33ccbb9d019f7910a6e04eab38b692bc5cfabc97e4c98ad20472bc413a0c434b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/roomsetting.h"
+          },
+          "hashes": {
+            "sha-256": "9bf6002a8956b0f82688ef51b0cef9dadd27e9041893fbd8771db937bf82a81d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/threadpool.h"
+          },
+          "hashes": {
+            "sha-256": "da02e0ece80a5e7d4254bc47797f40247d923fe5b84acbfde2c18534a3105dd9"
+          }
+        }
+      ]
+    }
+  ]
+}

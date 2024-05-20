@@ -1,0 +1,51 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.37.32824.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/system.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "2aad2b7541cb7fc83047e96a21d21481577e6bf933c68018d30ed586b0d28a76"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/system.h"
+          },
+          "hashes": {
+            "sha-256": "096854e97776c91a62324c615dbfd548b8ae90da00b6137fab47a1f35d83c17c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/stdfax.h"
+          },
+          "hashes": {
+            "sha-256": "e29d9d212c80ff4a525cd9e19154f4fc30857ade53087ca72686755786c9807c"
+          }
+        }
+      ]
+    }
+  ]
+}

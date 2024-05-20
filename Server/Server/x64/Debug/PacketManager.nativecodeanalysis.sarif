@@ -1,0 +1,501 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6386",
+          "message": {
+            "text": "'packet'에 쓰는 동안 버퍼 오버런이 발생했습니다."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/zinol/OneDrive/바탕 화면/FirstServer/FirstServer/racing/Server/Server/PacketManager.cpp"
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 5,
+                  "endLine": 27,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PacketManager::createPacket",
+                  "decoratedName": "?createPacket@PacketManager@@QEAAPEADHW4PacketType@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/zinol/OneDrive/바탕 화면/FirstServer/FirstServer/racing/Server/Server/PacketManager.cpp"
+                          },
+                          "region": {
+                            "startLine": 21,
+                            "startColumn": 8
+                          }
+                        },
+                        "message": {
+                          "text": "'packet'이(가) 1 요소의 배열입니다(1바이트)."
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/zinol/OneDrive/바탕 화면/FirstServer/FirstServer/racing/Server/Server/PacketManager.cpp"
+                          },
+                          "region": {
+                            "startLine": 22,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/zinol/OneDrive/바탕 화면/FirstServer/FirstServer/racing/Server/Server/PacketManager.cpp"
+                          },
+                          "region": {
+                            "startLine": 24,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/zinol/OneDrive/바탕 화면/FirstServer/FirstServer/racing/Server/Server/PacketManager.cpp"
+                          },
+                          "region": {
+                            "startLine": 25,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "'offset'이(가) 1과(와) 같을 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/zinol/OneDrive/바탕 화면/FirstServer/FirstServer/racing/Server/Server/PacketManager.cpp"
+                          },
+                          "region": {
+                            "startLine": 27,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "'packet[1]'에 쓰기가 잘못됨, (쓰기 가능한 범위는 0에서 0 사이임)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "산술 오버플로: 4 바이트 값의 '-' 연산자를 사용한 다음 결과를 8 바이트 값에 캐스트합니다. 오버플로를 방지하려면 '-' 연산자를 호출하기 전에 더 광범위한 형식에 값을 캐스트합니다(io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/zinol/OneDrive/바탕 화면/FirstServer/FirstServer/racing/Server/Server/PacketManager.cpp"
+                },
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 41,
+                  "endLine": 31,
+                  "endColumn": 46
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PacketManager::createPacket",
+                  "decoratedName": "?createPacket@PacketManager@@QEAAPEADHW4PacketType@@PEAD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6386",
+          "message": {
+            "text": "'packet'에 쓰는 동안 버퍼 오버런이 발생했습니다."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/zinol/OneDrive/바탕 화면/FirstServer/FirstServer/racing/Server/Server/PacketManager.cpp"
+                },
+                "region": {
+                  "startLine": 109,
+                  "startColumn": 5,
+                  "endLine": 109,
+                  "endColumn": 44
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PacketManager::EncodeClientsUDPAddress",
+                  "decoratedName": "?EncodeClientsUDPAddress@PacketManager@@QEAAPEADV?$vector@PEAVClient@@V?$allocator@PEAVClient@@@std@@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/zinol/OneDrive/바탕 화면/FirstServer/FirstServer/racing/Server/Server/PacketManager.cpp"
+                          },
+                          "region": {
+                            "startLine": 105,
+                            "startColumn": 62
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/zinol/OneDrive/바탕 화면/FirstServer/FirstServer/racing/Server/Server/PacketManager.cpp"
+                          },
+                          "region": {
+                            "startLine": 106,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/zinol/OneDrive/바탕 화면/FirstServer/FirstServer/racing/Server/Server/PacketManager.cpp"
+                          },
+                          "region": {
+                            "startLine": 107,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/zinol/OneDrive/바탕 화면/FirstServer/FirstServer/racing/Server/Server/PacketManager.cpp"
+                          },
+                          "region": {
+                            "startLine": 108,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "'packet'이(가) 21바이트 배열입니다."
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/zinol/OneDrive/바탕 화면/FirstServer/FirstServer/racing/Server/Server/PacketManager.cpp"
+                          },
+                          "region": {
+                            "startLine": 109,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "'_Old_4`addressSize*size+1'이(가) 22과(와) 같을 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/zinol/OneDrive/바탕 화면/FirstServer/FirstServer/racing/Server/Server/PacketManager.cpp"
+                          },
+                          "region": {
+                            "startLine": 109,
+                            "startColumn": 11
+                          }
+                        },
+                        "message": {
+                          "text": "'packet'에 쓰기가 잘못됨, (쓰기 가능한 범위를 벗어남)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "산술 오버플로: 4 바이트 값의 '*' 연산자를 사용한 다음 결과를 8 바이트 값에 캐스트합니다. 오버플로를 방지하려면 '*' 연산자를 호출하기 전에 더 광범위한 형식에 값을 캐스트합니다(io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/zinol/OneDrive/바탕 화면/FirstServer/FirstServer/racing/Server/Server/PacketManager.cpp"
+                },
+                "region": {
+                  "startLine": 108,
+                  "startColumn": 41
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PacketManager::EncodeClientsUDPAddress",
+                  "decoratedName": "?EncodeClientsUDPAddress@PacketManager@@QEAAPEADV?$vector@PEAVClient@@V?$allocator@PEAVClient@@@std@@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "산술 오버플로: 4 바이트 값의 '+' 연산자를 사용한 다음 결과를 8 바이트 값에 캐스트합니다. 오버플로를 방지하려면 '+' 연산자를 호출하기 전에 더 광범위한 형식에 값을 캐스트합니다(io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/zinol/OneDrive/바탕 화면/FirstServer/FirstServer/racing/Server/Server/PacketManager.cpp"
+                },
+                "region": {
+                  "startLine": 109,
+                  "startColumn": 23,
+                  "endLine": 109,
+                  "endColumn": 44
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PacketManager::EncodeClientsUDPAddress",
+                  "decoratedName": "?EncodeClientsUDPAddress@PacketManager@@QEAAPEADV?$vector@PEAVClient@@V?$allocator@PEAVClient@@@std@@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "산술 오버플로: 4 바이트 값의 '*' 연산자를 사용한 다음 결과를 8 바이트 값에 캐스트합니다. 오버플로를 방지하려면 '*' 연산자를 호출하기 전에 더 광범위한 형식에 값을 캐스트합니다(io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/zinol/OneDrive/바탕 화면/FirstServer/FirstServer/racing/Server/Server/PacketManager.cpp"
+                },
+                "region": {
+                  "startLine": 109,
+                  "startColumn": 23,
+                  "endLine": 109,
+                  "endColumn": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "PacketManager::EncodeClientsUDPAddress",
+                  "decoratedName": "?EncodeClientsUDPAddress@PacketManager@@QEAAPEADV?$vector@PEAVClient@@V?$allocator@PEAVClient@@@std@@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.37.32824.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/zinol/OneDrive/바탕 화면/FirstServer/FirstServer/racing/Server/Server/PacketManager.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "1b616ac2d679d3094a6559bf9c138b07ef5e915cbcf0c8d7b469cadce2b5926a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/packetmanager.h"
+          },
+          "hashes": {
+            "sha-256": "9a011e81ece7d15b664a38b4f78b5e742329ec7a2134989060b3035794334d1c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/stdfax.h"
+          },
+          "hashes": {
+            "sha-256": "e29d9d212c80ff4a525cd9e19154f4fc30857ade53087ca72686755786c9807c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/roomsetting.h"
+          },
+          "hashes": {
+            "sha-256": "9bf6002a8956b0f82688ef51b0cef9dadd27e9041893fbd8771db937bf82a81d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/client.h"
+          },
+          "hashes": {
+            "sha-256": "d8bb84d20619cdaed3c3a65ba8bc789ac4dff29e8cf7f5d48ad2315f9dbed5c0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/system.h"
+          },
+          "hashes": {
+            "sha-256": "096854e97776c91a62324c615dbfd548b8ae90da00b6137fab47a1f35d83c17c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/server.h"
+          },
+          "hashes": {
+            "sha-256": "9563a7049761afe5b3a237e5782ca098163f72f6552fd408d4adf29ab09bb7a7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/roommanager.h"
+          },
+          "hashes": {
+            "sha-256": "c7f2526e66a73de02eba22a9f3a0001d7b47666d4fd6c03967ffbc2420c853c7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/room.h"
+          },
+          "hashes": {
+            "sha-256": "9de0db25ec6be6626be7b9d267163009c36d51d5c58f4d4b6854f6404611246e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/superpeer.h"
+          },
+          "hashes": {
+            "sha-256": "33ccbb9d019f7910a6e04eab38b692bc5cfabc97e4c98ad20472bc413a0c434b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/superpeerscouter.h"
+          },
+          "hashes": {
+            "sha-256": "bb9bc89165e5efaaf03090af49ef7ff78328df735f1dba22ea89ae2d603d255f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/zinol/onedrive/바탕 화면/firstserver/firstserver/racing/server/server/threadpool.h"
+          },
+          "hashes": {
+            "sha-256": "da02e0ece80a5e7d4254bc47797f40247d923fe5b84acbfde2c18534a3105dd9"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿  Client.cpp
+  HolePunchingHandler.cpp
+  HolePunchingHandler.h
+  PacketHandler.cpp
+  PacketManager.cpp
+  Room.cpp
+  RoomManager.cpp
+  Server.cpp
+  Main.cpp
+  SuperPeerScouter.cpp
+C:\Users\조진호\Desktop\fast_n_furious\fast_n_furious\Server\Server\SuperPeerScouter.cpp(38,66): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  System.cpp
+  코드를 생성하고 있습니다...
+x64\Debug\HolePunchingHandler.obj : warning LNK4042: 개체가 두 번 이상 지정되었습니다. 나머지는 무시됩니다.
+  Server.vcxproj -> C:\Users\조진호\Desktop\fast_n_furious\fast_n_furious\Server\x64\Debug\Server.exe
