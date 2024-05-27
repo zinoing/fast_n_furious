@@ -76,11 +76,13 @@ public class GameManager : MonoBehaviour
         {
             if(carStates[i].clientID == carInfo.clientID)
             {
-                if (CheckErrorRange(carStates[i].car.transform.position, carInfo.carState.position, carStates[i].car.transform.rotation, carInfo.carState.rotation, 100.0f * carInfo.carState.currentSpeed, 90.0f) == false)
+                
+                if (CheckErrorRange(carStates[i].car.transform.position, carInfo.carState.position, carStates[i].car.transform.rotation, carInfo.carState.rotation, carInfo.carState.currentSpeed, 30.0f) == false)
                 {
                     carStates[i].car.transform.position = carInfo.carState.position;
                     carStates[i].car.transform.rotation = carInfo.carState.rotation;
                 }
+                
                 // 송신한 Peer 시점과 현재 시간 차를 계산합니다. 
                 long tickDiff = TimeManager.Instance.CheckDiffTickFromGameTime(new DateTime(carInfo.gameTick));
                 diffSecond = (new DateTime(tickDiff)).Second;
@@ -91,11 +93,6 @@ public class GameManager : MonoBehaviour
                 Vector3 currentVector = isReversing ? -carStates[i].car.transform.forward : carStates[i].car.transform.forward;
                 Vector3 movement = currentVector.normalized * distanceMoved;
 
-                // 각속도를 이용하여 시간 차 동안의 회전을 계산합니다.
-                float rotationAngle = carInfo.carState.currentAngularVelocity.magnitude * ((float)diffSecond);
-                Vector3 rotationAxis = carInfo.carState.currentAngularVelocity.normalized;
-                Quaternion rotationQuaternion = Quaternion.AngleAxis(rotationAngle, rotationAxis);
-
                 DetailCarInfo updatedCarInfo = carStates[i];
 
                 // 1초 뒤의 위치와 회전 값을 목표값으로 설정하였습니다.
@@ -103,8 +100,10 @@ public class GameManager : MonoBehaviour
                 movement = currentVector.normalized * distanceMoved;
                 updatedCarInfo.targetPos = carStates[i].car.transform.position + movement;
 
-                rotationAngle = carInfo.carState.currentAngularVelocity.magnitude * (1.0f + (float)diffSecond);
-                rotationQuaternion = Quaternion.AngleAxis(rotationAngle, rotationAxis);
+                // 각속도를 이용하여 시간 차 동안의 회전을 계산합니다.
+                float rotationAngle = carInfo.carState.currentAngularVelocity.magnitude * (1.0f + (float)diffSecond);
+                Vector3 rotationAxis = carInfo.carState.currentAngularVelocity.normalized;
+                Quaternion rotationQuaternion = Quaternion.AngleAxis(rotationAngle, rotationAxis);
                 updatedCarInfo.targetRotation = rotationQuaternion * carInfo.carState.rotation;
                 carStates[i] = updatedCarInfo;
 
