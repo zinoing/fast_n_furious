@@ -9,7 +9,6 @@ int main()
 
     Server::Instance().run();
 
-    int idx = 0;
     while (1) {
         Client* client = Server::Instance().connectToClient();
 
